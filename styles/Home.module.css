@@ -42,7 +42,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3.75rem;
 }
 
 .title,
@@ -104,13 +104,47 @@
 }
 
 .logo {
-  height: 1em;
   margin-left: 0.5rem;
 }
+
+.qr_input {
+  margin: 40px 0;
+  width: 40vw;
+  font-size: x-large;
+  border-radius: 8px;
+  padding: 20px 10px;
+}
+
+.qr_generate_btn {
+  background-color: black;
+  color: white;
+  margin-bottom: 40px;
+  width: 40vw;
+  font-size: x-large;
+  border-radius: 8px;
+  padding: 20px 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.qr_generate_btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.qr_generate_btn:focus {
+  transform: scale(0.9);
+}
+
 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .qr_generate_btn {
+    width: 90%;
+  }
+  .qr_input {
+    width: 90%;
   }
 }
